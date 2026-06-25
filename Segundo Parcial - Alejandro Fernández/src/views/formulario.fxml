@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21.0.9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FormularioController">
+    <children>
+        <Label layoutX="125.0" layoutY="35.0" text="Tipo:" />
+        <ChoiceBox fx:id="cbTipo" layoutX="205.0" layoutY="30.0" onAction="#onTipoCambiado" prefWidth="150.0" />
+
+        <Label layoutX="125.0" layoutY="75.0" text="Código:" />
+        <TextField fx:id="txtCodigo" layoutX="205.0" layoutY="70.0" />
+
+        <Label layoutX="125.0" layoutY="115.0" text="Marca:" />
+        <TextField fx:id="txtMarca" layoutX="205.0" layoutY="110.0" />
+
+        <Label layoutX="125.0" layoutY="155.0" text="Modelo:" />
+        <TextField fx:id="txtModelo" layoutX="205.0" layoutY="150.0" />
+
+        <Label layoutX="125.0" layoutY="195.0" text="Precio:" />
+        <TextField fx:id="txtPrecio" layoutX="205.0" layoutY="190.0" />
+
+        <Label layoutX="125.0" layoutY="235.0" text="Stock:" />
+        <TextField fx:id="txtStock" layoutX="205.0" layoutY="230.0" />
+
+        <Label layoutX="125.0" layoutY="275.0" text="Proveedor:" />
+        <ChoiceBox fx:id="cbProveedor" layoutX="205.0" layoutY="270.0" prefWidth="150.0" />
+
+        <Label fx:id="lblDatoExtra" layoutX="61.0" layoutY="310.0" prefHeight="40.0" prefWidth="141.0" text="Garantía (meses):" />
+        <TextField fx:id="txtDatoExtra" layoutX="205.0" layoutY="315.0" />
+
+        <Button fx:id="btnAceptar" layoutX="126.0" layoutY="380.0" mnemonicParsing="false" onAction="#aceptar" prefHeight="39.0" prefWidth="89.0" text="Aceptar" />
+        <Button fx:id="btnCancelar" layoutX="300.0" layoutY="380.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="39.0" prefWidth="89.0" text="Cancelar" />
+    </children>
+</AnchorPane>
